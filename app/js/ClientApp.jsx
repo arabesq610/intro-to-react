@@ -1,20 +1,15 @@
 import React from 'react';
+
 import { render } from 'react-dom';
 
-const ce = React.createElement;
-
-const Title = function(props) {
-  return ce('div', null, ce('h1', { style: { color: props.color } }, props.title));
-};
-
-const Component = function() {
-  return ce(
-    'div',
-    { id: 'mfc' },
-    ce(Title, { title: 'game of thrones', color: 'lime' }),
-    ce(Title, { title: 'stranger things', color: 'pink' }),
-    ce(Title, { title: 'i love lucy', color: 'red' })
+const App = () =>  (
+    <div className="app omg">
+      <div className="landing">
+        <h1>title</h1>
+        <input type="text" placeholder="search" />
+        <a href>link</a>
+      </div>
+    </div>
   );
-};
 
-render(ce(Component), document.getElementById('app'));
+render(<App />, document.getElementById('app'));
