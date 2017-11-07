@@ -1,15 +1,17 @@
 import React from 'react';
-
 import { render } from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Landing from './Landing';
+import Search from './Search';
 
-const App = () =>  (
-    <div className="app omg">
-      <div className="landing">
-        <h1>title</h1>
-        <input type="text" placeholder="search" />
-        <a href>link</a>
-      </div>
+const App = () => (
+  <BrowserRouter>
+    <div className="app">
+      <Route exact path="/" component={Landing} />
+      <Route path="/search" component={Search} />
     </div>
-  );
+  </BrowserRouter>
+);
+
 
 render(<App />, document.getElementById('app'));

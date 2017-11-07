@@ -25,7 +25,7 @@ Why this? Not necessarily necessary. Could just run `$ yarn upgrade --latest`, b
 ## Install [Babel](https://babeljs.io/)
 `$ yarn global add babel`
 
-## Install [Prettier](https://yarnpkg.com/en/)
+## Install [Prettier](https://prettier.io/)
 `$ yarn global add prettier`
 
 ## Install [eslint](https://eslint.org/)
