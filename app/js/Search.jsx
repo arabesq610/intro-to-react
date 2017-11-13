@@ -1,10 +1,11 @@
-import React from 'react';
-import data from '../data.json';
+import React from "react";
+import ShowCard from "./ShowCard";
+import data from "../data.json";
 
 const Search = () => (
-    <div className='search'>
-        { data.shows.map(show => <h3>{ show.title }</h3>) }
-    </div>
+  <div className="search">
+    { data.shows.map(show => <ShowCard {...show} />) /* use jsx spread operator */ }
+  </div>
 );
 
 export default Search;
