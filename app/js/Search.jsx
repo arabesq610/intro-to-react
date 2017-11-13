@@ -4,7 +4,7 @@ import data from "../data.json";
 
 const Search = () => (
   <div className="search">
-    { data.shows.map(show => <ShowCard {...show} />) /* use jsx spread operator */ }
+    { data.shows.map(show => <ShowCard key={show.imdbID} {...show} />) /* use jsx spread operator */ }
   </div>
 );
 
