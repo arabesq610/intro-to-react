@@ -1,4 +1,4 @@
-# CNI Dev Workstation Setup
+# Workstation Setup
 
 ## Editor Setup
 
